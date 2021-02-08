@@ -1,2 +1,0 @@
-# everyonesbankproject
-Fictional bank website.
