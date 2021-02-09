@@ -19,31 +19,33 @@
 </head>
 
 <body>
-    <header class="jumbotron jumbotron-fluid">
+    <header id="homeHeader" class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col align-content-start">
                     <img id="homeLogo" src="img/logo.png" alt="Everyone's Bank Logo" class="img-thumbnail img-fluid rounded-circle">
                 </div>
-
+                <div class="col-6">
+                    <h1 class="text-white"><strong>Everyone's Bank</strong></h1>
+                </div>
+            <div class="col">
                 <form class="form-inline">
-                    <label class="sr-only" for="inlineFormInputName2">Username</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Username">
-                
-                    <label class="sr-only" for="inlineFormInputGroupUsername2">Password</label>
+                    <label class="sr-only" for="username">Username</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="username" placeholder="Username">
+                    <label class="sr-only" for="password">Password</label>
                     <div class="input-group mb-2 mr-sm-2">
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Password">
+                        <input type="text" class="form-control" id="password" placeholder="Password">
                     </div>                
                     <button type="submit" class="btn btn-primary mb-2">Login</button>
                 </form>
-
+            </div>
             </div>
 
         </div>
 
     </header>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
         <a class="navbar-brand text-white" href="#">Everyone's Bank</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,6 +68,10 @@
             </ul>
         </div>
     </nav>
+        
+    
+    <h1>Hello World</h1>
+
 
     <footer class="site-footer">
         

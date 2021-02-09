@@ -1,10 +1,14 @@
-$header-color: (#086FF3, #4088E5);
+$header-color: linear-gradient(to right, #6f96c9, #086FF3);
 
 
 #homeLogo {
     width: 150px;
+    
 }
 
-header {
-    background-color: linear-gradient(to right, #086FF3, #4088E5);
+#homeHeader {
+    
+    background: $header-color;
+    margin-bottom: 0px;
+
 }

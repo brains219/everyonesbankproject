@@ -1,5 +1,6 @@
 #homeLogo {
   width: 150px; }
 
-header {
-  background-color: linear-gradient(to right, #086FF3, #4088E5); }
+#homeHeader {
+  background: linear-gradient(to right, #6f96c9, #086FF3);
+  margin-bottom: 0px; }
