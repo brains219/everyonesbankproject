@@ -1,14 +1,25 @@
 $header-color: linear-gradient(to right, #6f96c9, #086FF3);
+$headerPadding: 1rem;
+$logoWidth: 150px;
 
 
 #homeLogo {
-    width: 150px;
-    
+    width: $logoWidth;
+    margin-left: 10px;
 }
 
 #homeHeader {
     
     background: $header-color;
     margin-bottom: 0px;
+    padding:$headerPadding;
 
+    h1 {
+        margin-top: 3rem;
+    }
+
+    form {
+        margin-top: 1rem;
+    }
 }
+
