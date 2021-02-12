@@ -13,3 +13,17 @@
 
 .carousel img {
   height: 600px; }
+
+.site-footer {
+  background: linear-gradient(to right, #6f96c9, #086FF3);
+  color: white; }
+  .site-footer a {
+    color: white; }
+
+.map {
+  height: 300px;
+  width: 100%; }
+
+.jumbotron {
+  margin-bottom: 0%;
+  padding-left: 30px; }

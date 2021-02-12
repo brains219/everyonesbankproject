@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
     <title>Everyone's Bank</title>
@@ -65,7 +66,7 @@
             </ul>
         </div>
     </nav>
-
+<div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -93,16 +94,60 @@
         </a>
     </div>
 
-    <div class="container">
         <div class="row">
-            <div class="col">
-                <h1>Hello Banking World</h1>
+            <div class="col-sm-6 text-center">
+                <br>
+                <br>
+                <br>
+                <h3>Contact infomation: </h3>
+                    <address>
+                        <strong>Address:</strong> <br>
+                        Everyone's Bank <br>
+                        PO Box 1000 <br>
+                        Middle of Nowhere, NJ 1000 <br>
+                       <strong>Phone Number:</strong> <a href="tel: +12016553810">+1-201-655-3810</a> <br>
+                       <strong>Email: </strong> <a href="mailto:supersupport@ebank.com">supersupport@ebank.com</a> 
+                    </address>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div id="map" class="map"></div>
+                    <div class="card-body">
+                        <p class="card-text">Find our nearest location</p>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
 
     <footer class="site-footer">
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel: +12016553810"><i class="fa fa-phone"></i>
+                            +1-201-655-3810</a><br>
+                        <a role="button" class="btn btn-link" href="mailto:supersupport@ebank.com"><i class="fa fa-envelope-o"></i>
+                            supersupport@ebank.com</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 <!-- build:js js/main.js -->
@@ -111,7 +156,21 @@
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 <!-- endbuild -->
-
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+<script type="text/javascript">
+    var map = new ol.Map({
+      target: 'map',
+      layers: [
+        new ol.layer.Tile({
+          source: new ol.source.OSM()
+        })
+      ],
+      view: new ol.View({
+        center: ol.proj.fromLonLat([37.41, 8.82]),
+        zoom: 4
+      })
+    });
+  </script>
 </body>
 
 </html>

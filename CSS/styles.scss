@@ -1,7 +1,8 @@
 $header-color: linear-gradient(to right, #6f96c9, #086FF3);
 $headerPadding: 1rem;
 $logoWidth: 150px;
-
+$textColorWhite: white;
+$carouselImgHeight: 600px;
 
 #homeLogo {
     width: $logoWidth;
@@ -25,6 +26,26 @@ $logoWidth: 150px;
 
 .carousel {
     img {
-        height: 600px;
+        height: $carouselImgHeight;
     }
+  }
+
+  .site-footer {
+    background: $header-color;
+    color: $textColorWhite;
+
+    a {
+        color: $textColorWhite;
+    }
+   
+  }
+
+  .map {
+    height: 300px;
+    width: 100%;
+  }
+
+  .jumbotron {
+      margin-bottom: 0%;
+      padding-left: 30px;
   }
