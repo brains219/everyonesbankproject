@@ -1,2 +1,2 @@
 # everyonesbankproject
-Fictional bank website.
+Simple BootStrap 4 static website for a fictional financial institution. 
