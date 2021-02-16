@@ -61,3 +61,11 @@ $carouselImgHeight: 600px;
       height: 300px;
       margin-bottom: 20px;
   }
+
+    body {
+        font-family: $body-font; 
+    }
+
+    h1, h2, h3 {
+        font-family: $header-font;
+    }
