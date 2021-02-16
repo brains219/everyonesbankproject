@@ -27,3 +27,13 @@
 .jumbotron {
   margin-bottom: 0%;
   padding-left: 30px; }
+
+#acctImg1 {
+  width: 350px;
+  height: 300px;
+  margin-top: 20px; }
+
+#acctImg2 {
+  width: 350px;
+  height: 300px;
+  margin-bottom: 20px; }
